@@ -1,0 +1,366 @@
+/* 关于页面样式 */
+
+/* 布局 */
+.slide-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .slide-wrapper {
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+  }
+}
+
+.wrap-left {
+  flex: 1;
+  margin-bottom: 2rem;
+}
+
+.wrap-right {
+  flex: 1.5;
+}
+
+/* 图片容器 */
+.image-container {
+  width: 100%;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.image-container img,
+.company-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* 标题和文本 */
+.section-heading {
+  font-size: 2rem;
+  color: var(--primary-color, #0072fe);
+  margin-bottom: 1.5rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.section-heading::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background-color: var(--primary-color, #0072fe);
+}
+
+.text-container {
+  line-height: 1.6;
+}
+
+.text-container p {
+  margin-bottom: 1rem;
+}
+
+/* 时间线样式 */
+.timeline {
+  margin-top: 1.5rem;
+}
+
+.timeline-item {
+  display: flex;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.timeline-year {
+  font-weight: bold;
+  min-width: 120px;
+  color: var(--primary-color, #0072fe);
+}
+
+/* 研发团队样式 */
+.team-intro {
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.departments-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.department-item {
+  background-color: rgba(0, 114, 254, 0.05);
+  padding: 1.5rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.department-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.department-name {
+  color: var(--primary-color, #0072fe);
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.department-location {
+  font-size: 0.9rem;
+  font-weight: normal;
+  margin-left: 0.5rem;
+  color: #666;
+}
+
+.department-description {
+  color: #555;
+  line-height: 1.5;
+}
+
+/* 业务卡片样式 */
+.business-cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.business-card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.business-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+}
+
+.business-title {
+  color: var(--primary-color, #0072fe);
+  margin-bottom: 0.75rem;
+  font-size: 1.3rem;
+}
+
+.business-short-desc {
+  color: #555;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.business-features {
+  padding-left: 1.5rem;
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+}
+
+.business-features li {
+  margin-bottom: 0.5rem;
+  position: relative;
+  line-height: 1.4;
+}
+
+.business-features li::before {
+  content: '•';
+  color: var(--primary-color, #0072fe);
+  position: absolute;
+  left: -1rem;
+  font-size: 1.2rem;
+}
+
+.business-more {
+  color: var(--primary-color, #0072fe);
+  text-align: right;
+  font-weight: 500;
+  margin-top: auto;
+}
+
+/* 业务详情弹窗样式 */
+.business-detail-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 1rem;
+}
+
+.business-detail-content {
+  background-color: white;
+  border-radius: 8px;
+  padding: 2rem;
+  max-width: 800px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+}
+
+.close-button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #666;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.close-button:hover {
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.business-detail-title {
+  color: var(--primary-color, #0072fe);
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid #eee;
+}
+
+.business-detail-desc {
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.business-detail-desc p {
+  margin-bottom: 1rem;
+}
+
+.business-detail-features h3 {
+  color: var(--primary-color, #0072fe);
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.business-detail-features ul {
+  padding-left: 1.5rem;
+}
+
+.business-detail-features li {
+  margin-bottom: 0.75rem;
+  position: relative;
+  line-height: 1.5;
+}
+
+.business-detail-features li::before {
+  content: '✓';
+  color: var(--success-color, #4caf50);
+  position: absolute;
+  left: -1.5rem;
+  font-weight: bold;
+}
+
+/* 首页业务预览 */
+.business-preview {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.business-preview-title {
+  font-size: 1.5rem;
+  color: var(--primary-color, #0072fe);
+  margin-bottom: 1rem;
+}
+
+.business-preview-items {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.business-preview-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+  padding: 1rem;
+  min-width: 120px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.business-preview-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.business-preview-icon {
+  width: 40px;
+  height: 40px;
+  margin: 0 auto 0.5rem;
+  background-color: rgba(0, 114, 254, 0.1);
+  border-radius: 50%;
+}
+
+.business-preview-name {
+  font-size: 0.9rem;
+  color: #333;
+}
+
+/* 动画效果 */
+.animate-fadeIn {
+  animation: fadeIn 0.8s ease forwards;
+}
+
+.animate-slideIn {
+  animation: slideIn 0.8s ease forwards;
+}
+
+.animate-delay-200 {
+  animation-delay: 200ms;
+}
+
+.animate-delay-400 {
+  animation-delay: 400ms;
+}
+
+.animate-delay-600 {
+  animation-delay: 600ms;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+} 

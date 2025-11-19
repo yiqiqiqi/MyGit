@@ -1,0 +1,276 @@
+.header_layout{
+    height: 72px;
+    width: 100%;
+    font-size: 14px;
+    display: block;
+    min-width: 1440px;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    backdrop-filter: blur(4px);
+    opacity: 1;
+}
+.header_content{
+    margin-top: 72px;
+    height: 300px;
+    width: 100%;
+    font-size: 14px;
+    display: block;
+    min-width: 1440px;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    backdrop-filter: blur(4px);
+    opacity: 1;
+    
+    transition: height 0.25s ease-out;
+    transform: scaleY(1);
+}
+.content_left{
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #00000099;
+    opacity: .7;
+    display: block;
+}
+.content_right{
+    position: absolute;
+    margin-left: 25%;
+    width: 75%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #ffffff99;
+    opacity: .7;
+    display: block;
+}
+.content_art{
+    position: absolute;
+    margin-top: 25px;
+    margin-left: 30px;
+    height: 250px;
+    width: 1200px;
+    display: block;
+    text-align: center;
+    
+    font-size: 28px;
+    
+}
+
+.header_blurbg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #00000099;
+    opacity: .7;
+    display: block;
+}
+
+.header_wrap{
+    height: 100%;
+    width: 1400px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header_wrap button{
+    width: auto;
+    font-size: 40px;
+    font-weight: bold;
+    margin: auto;
+    border: none;
+    background: none;
+    color: white;
+    font-size: inherit;
+    cursor: pointer;
+    outline: 0;
+    overflow: visible;
+    text-rendering: auto;
+    text-transform: none;
+    text-indent: 0px;
+    display: inline-block;
+    text-align: center;
+    padding-block: 1px;
+    padding-inline: 6px;
+}
+
+.header_icon{
+    margin-left: -50px;
+    align-items: center;
+    width: 300px;
+    flex-shrink: 0;
+    align-content: center;
+    text-align: center;
+    display: flex;
+}
+.header_name{
+    align-items: center;
+    margin-left: 10px; 
+    font-size: 60px;
+    font-weight: bold;
+    background-image: linear-gradient(45deg, rgb(255, 255, 255),rgb(0, 114, 254) );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.header_center{
+    margin-left: 80px;
+    display: flex;
+    height: 100%;
+}
+
+.header_right{
+    width: 400px;
+    flex-shrink: 0;
+}
+
+.header_menu{
+    position: relative;
+    width: 120px;
+    flex-shrink: 0;
+    align-content: center;
+}
+.header_menu button::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    transform-origin: left;
+    transition: transform 0.25s ease-out;
+  }
+.header_menu button:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+  
+.header_menu button:hover {
+    align-items: center;
+    font-weight: bold;
+    background-image: linear-gradient(45deg, rgb(255, 255, 255),rgb(79, 155, 248) );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+.header_login{
+    margin-left: 200px;
+    min-width: 00px;
+    text-align: center;
+    display: flex;
+}
+
+.header_right_menu{
+    margin-left: 30px;
+    position: relative;
+    width: auto;
+    display: flex;
+    flex-shrink: 0;
+    align-content: center;
+}
+.content_menu{
+    display: block;
+    height: 60px;
+    align-content: center;
+}
+.content_menu button{
+    width: 100%;
+    font-size: 40px;
+    font-weight: bold;
+    margin: auto;
+    border: none;
+    background: none;
+    color: white;
+    font-size: inherit;
+    cursor: pointer;
+    outline: 0;
+    overflow: visible;
+    text-rendering: auto;
+    text-transform: none;
+    text-indent: 0px;
+    display: inline-block;
+    text-align: center;
+    padding-block: 1px;
+    padding-inline: 6px;
+}
+
+/* Header组件样式 */
+.header-logo {
+  transition: transform 0.3s ease;
+}
+
+.header-logo:hover {
+  transform: scale(1.05);
+}
+
+/* 菜单项悬停效果 */
+.menu-item {
+  position: relative;
+}
+
+.menu-item::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: #3B82F6; /* Tailwind blue-500 */
+  transition: width 0.3s ease, left 0.3s ease;
+}
+
+.menu-item:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+/* 子菜单动画 */
+.submenu {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.submenu.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* 毛玻璃效果优化 */
+@supports (backdrop-filter: blur(10px)) {
+  .header-blur {
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+  .header-nav {
+    display: none;
+  }
+  
+  .header-mobile-menu {
+    display: block;
+  }
+}
+
+@media (min-width: 769px) {
+  .header-nav {
+    display: flex;
+  }
+  
+  .header-mobile-menu {
+    display: none;
+  }
+}

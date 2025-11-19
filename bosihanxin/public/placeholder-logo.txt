@@ -1,0 +1,8 @@
+请在运行前添加logo图片文件：
+
+1. 创建简单的logo.png文件（至少150x50像素）
+2. 放置在public文件夹下
+3. 或者修改组件中的图片引用路径
+
+临时解决方法：您也可以暂时修改Header.js和MyHeader.js中的Image组件，
+将src="/logo.png"改为src="https://via.placeholder.com/150x50?text=企业Logo" 

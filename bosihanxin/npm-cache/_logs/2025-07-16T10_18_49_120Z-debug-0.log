@@ -1,0 +1,805 @@
+0 verbose cli C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\npm\bin\npm-cli.js
+1 info using npm@10.9.2
+2 info using node@v23.10.0
+3 silly config load:file:C:\Program Files\nodejs\node_modules\npm\npmrc
+4 silly config load:file:E:\table\eenous\.npmrc
+5 silly config load:file:C:\Users\zhoukai\cadence\Cadence\SPB_Data\.npmrc
+6 silly config load:file:C:\Program Files\nodejs\node_global\etc\npmrc
+7 verbose title npm install better-sqlite3 bcryptjs
+8 verbose argv "install" "better-sqlite3" "bcryptjs"
+9 verbose logfile logs-max:10 dir:E:\table\eenous\npm-cache\_logs\2025-07-16T10_18_49_120Z-
+10 verbose logfile E:\table\eenous\npm-cache\_logs\2025-07-16T10_18_49_120Z-debug-0.log
+11 silly logfile done cleaning log files
+12 silly packumentCache heap:4345298944 maxSize:1086324736 maxEntrySize:543162368
+13 silly idealTree buildDeps
+14 silly fetch manifest better-sqlite3@^8.7.0
+15 silly packumentCache full:https://registry.npm.taobao.org/better-sqlite3 cache-miss
+16 verbose shrinkwrap failed to load node_modules/.package-lock.json out of date, updated: node_modules
+17 http fetch GET 200 https://registry.npmmirror.com/better-sqlite3 307ms (cache revalidated)
+18 silly packumentCache full:https://registry.npm.taobao.org/better-sqlite3 set size:333622 disposed:false
+19 silly fetch manifest bcryptjs@^2.4.3
+20 silly packumentCache full:https://registry.npm.taobao.org/bcryptjs cache-miss
+21 http fetch GET 200 https://registry.npmmirror.com/bcryptjs 91ms (cache revalidated)
+22 silly packumentCache full:https://registry.npm.taobao.org/bcryptjs set size:75392 disposed:false
+23 silly placeDep ROOT bcryptjs@2.4.3 OK for: modern-enterprise-website@0.1.0 want: ^2.4.3
+24 silly placeDep ROOT better-sqlite3@8.7.0 OK for: modern-enterprise-website@0.1.0 want: ^8.7.0
+25 silly fetch manifest bindings@^1.5.0
+26 silly packumentCache full:https://registry.npm.taobao.org/bindings cache-miss
+27 silly fetch manifest prebuild-install@^7.1.1
+28 silly packumentCache full:https://registry.npm.taobao.org/prebuild-install cache-miss
+29 http fetch GET 200 https://registry.npmmirror.com/bindings 53ms (cache revalidated)
+30 silly packumentCache full:https://registry.npm.taobao.org/bindings set size:27921 disposed:false
+31 http fetch GET 200 https://registry.npmmirror.com/prebuild-install 95ms (cache revalidated)
+32 silly packumentCache full:https://registry.npm.taobao.org/prebuild-install set size:148330 disposed:false
+33 silly placeDep ROOT bindings@1.5.0 OK for: better-sqlite3@8.7.0 want: ^1.5.0
+34 silly placeDep ROOT prebuild-install@7.1.3 OK for: better-sqlite3@8.7.0 want: ^7.1.1
+35 silly fetch manifest file-uri-to-path@1.0.0
+36 silly packumentCache full:https://registry.npm.taobao.org/file-uri-to-path cache-miss
+37 silly fetch manifest detect-libc@^2.0.0
+38 silly packumentCache full:https://registry.npm.taobao.org/detect-libc cache-miss
+39 silly fetch manifest expand-template@^2.0.3
+40 silly packumentCache full:https://registry.npm.taobao.org/expand-template cache-miss
+41 silly fetch manifest github-from-package@0.0.0
+42 silly packumentCache full:https://registry.npm.taobao.org/github-from-package cache-miss
+43 silly fetch manifest mkdirp-classic@^0.5.3
+44 silly packumentCache full:https://registry.npm.taobao.org/mkdirp-classic cache-miss
+45 silly fetch manifest napi-build-utils@^2.0.0
+46 silly packumentCache full:https://registry.npm.taobao.org/napi-build-utils cache-miss
+47 silly fetch manifest node-abi@^3.3.0
+48 silly packumentCache full:https://registry.npm.taobao.org/node-abi cache-miss
+49 silly fetch manifest pump@^3.0.0
+50 silly packumentCache full:https://registry.npm.taobao.org/pump cache-miss
+51 silly fetch manifest rc@^1.2.7
+52 silly packumentCache full:https://registry.npm.taobao.org/rc cache-miss
+53 silly fetch manifest simple-get@^4.0.0
+54 silly packumentCache full:https://registry.npm.taobao.org/simple-get cache-miss
+55 silly fetch manifest tar-fs@^2.0.0
+56 silly packumentCache full:https://registry.npm.taobao.org/tar-fs cache-miss
+57 silly fetch manifest tunnel-agent@^0.6.0
+58 silly packumentCache full:https://registry.npm.taobao.org/tunnel-agent cache-miss
+59 http fetch GET 200 https://registry.npmmirror.com/file-uri-to-path 85ms (cache revalidated)
+60 silly packumentCache full:https://registry.npm.taobao.org/file-uri-to-path set size:9131 disposed:false
+61 http fetch GET 200 https://registry.npmmirror.com/simple-get 129ms (cache revalidated)
+62 silly packumentCache full:https://registry.npm.taobao.org/simple-get set size:81097 disposed:false
+63 http fetch GET 200 https://registry.npmmirror.com/napi-build-utils 136ms (cache revalidated)
+64 silly packumentCache full:https://registry.npm.taobao.org/napi-build-utils set size:10691 disposed:false
+65 http fetch GET 200 https://registry.npmmirror.com/github-from-package 144ms (cache revalidated)
+66 silly packumentCache full:https://registry.npm.taobao.org/github-from-package set size:2913 disposed:false
+67 http fetch GET 200 https://registry.npmmirror.com/expand-template 158ms (cache revalidated)
+68 silly packumentCache full:https://registry.npm.taobao.org/expand-template set size:18298 disposed:false
+69 http fetch GET 200 https://registry.npmmirror.com/node-abi 161ms (cache revalidated)
+70 silly packumentCache full:https://registry.npm.taobao.org/node-abi set size:256719 disposed:false
+71 http fetch GET 200 https://registry.npmmirror.com/tunnel-agent 171ms (cache revalidated)
+72 silly packumentCache full:https://registry.npm.taobao.org/tunnel-agent set size:11956 disposed:false
+73 http fetch GET 200 https://registry.npmmirror.com/pump 180ms (cache revalidated)
+74 silly packumentCache full:https://registry.npm.taobao.org/pump set size:39118 disposed:false
+75 http fetch GET 200 https://registry.npmmirror.com/rc 182ms (cache revalidated)
+76 silly packumentCache full:https://registry.npm.taobao.org/rc set size:85073 disposed:false
+77 http fetch GET 200 https://registry.npmmirror.com/tar-fs 183ms (cache revalidated)
+78 silly packumentCache full:https://registry.npm.taobao.org/tar-fs set size:110831 disposed:false
+79 http fetch GET 200 https://registry.npmmirror.com/mkdirp-classic 196ms (cache revalidated)
+80 silly packumentCache full:https://registry.npm.taobao.org/mkdirp-classic set size:3569 disposed:false
+81 http fetch GET 200 https://registry.npmmirror.com/detect-libc 227ms (cache revalidated)
+82 silly packumentCache full:https://registry.npm.taobao.org/detect-libc set size:38482 disposed:false
+83 silly placeDep ROOT file-uri-to-path@1.0.0 OK for: bindings@1.5.0 want: 1.0.0
+84 silly placeDep ROOT detect-libc@2.0.4 OK for: prebuild-install@7.1.3 want: ^2.0.0
+85 silly placeDep ROOT expand-template@2.0.3 OK for: prebuild-install@7.1.3 want: ^2.0.3
+86 silly placeDep ROOT github-from-package@0.0.0 OK for: prebuild-install@7.1.3 want: 0.0.0
+87 silly placeDep ROOT mkdirp-classic@0.5.3 OK for: prebuild-install@7.1.3 want: ^0.5.3
+88 silly placeDep ROOT napi-build-utils@2.0.0 OK for: prebuild-install@7.1.3 want: ^2.0.0
+89 silly placeDep ROOT node-abi@3.75.0 OK for: prebuild-install@7.1.3 want: ^3.3.0
+90 silly placeDep ROOT pump@3.0.3 OK for: prebuild-install@7.1.3 want: ^3.0.0
+91 silly placeDep ROOT rc@1.2.8 OK for: prebuild-install@7.1.3 want: ^1.2.7
+92 silly placeDep ROOT simple-get@4.0.1 OK for: prebuild-install@7.1.3 want: ^4.0.0
+93 silly placeDep ROOT tar-fs@2.1.3 OK for: prebuild-install@7.1.3 want: ^2.0.0
+94 silly placeDep ROOT tunnel-agent@0.6.0 OK for: prebuild-install@7.1.3 want: ^0.6.0
+95 silly fetch manifest end-of-stream@^1.1.0
+96 silly packumentCache full:https://registry.npm.taobao.org/end-of-stream cache-miss
+97 silly fetch manifest deep-extend@^0.6.0
+98 silly packumentCache full:https://registry.npm.taobao.org/deep-extend cache-miss
+99 silly fetch manifest ini@~1.3.0
+100 silly packumentCache full:https://registry.npm.taobao.org/ini cache-miss
+101 silly fetch manifest strip-json-comments@~2.0.1
+102 silly packumentCache full:https://registry.npm.taobao.org/strip-json-comments cache-miss
+103 silly fetch manifest decompress-response@^6.0.0
+104 silly packumentCache full:https://registry.npm.taobao.org/decompress-response cache-miss
+105 silly fetch manifest simple-concat@^1.0.0
+106 silly packumentCache full:https://registry.npm.taobao.org/simple-concat cache-miss
+107 silly fetch manifest chownr@^1.1.1
+108 silly packumentCache full:https://registry.npm.taobao.org/chownr cache-miss
+109 silly fetch manifest tar-stream@^2.1.4
+110 silly packumentCache full:https://registry.npm.taobao.org/tar-stream cache-miss
+111 silly fetch manifest safe-buffer@^5.0.1
+112 silly packumentCache full:https://registry.npm.taobao.org/safe-buffer cache-miss
+113 http fetch GET 200 https://registry.npmmirror.com/deep-extend 59ms (cache revalidated)
+114 silly packumentCache full:https://registry.npm.taobao.org/deep-extend set size:32172 disposed:false
+115 http fetch GET 200 https://registry.npmmirror.com/ini 60ms (cache revalidated)
+116 silly packumentCache full:https://registry.npm.taobao.org/ini set size:51973 disposed:false
+117 http fetch GET 200 https://registry.npmmirror.com/strip-json-comments 60ms (cache revalidated)
+118 silly packumentCache full:https://registry.npm.taobao.org/strip-json-comments set size:36589 disposed:false
+119 http fetch GET 200 https://registry.npmmirror.com/tar-stream 71ms (cache revalidated)
+120 silly packumentCache full:https://registry.npm.taobao.org/tar-stream set size:120513 disposed:false
+121 http fetch GET 200 https://registry.npmmirror.com/safe-buffer 77ms (cache revalidated)
+122 silly packumentCache full:https://registry.npm.taobao.org/safe-buffer set size:38090 disposed:false
+123 http fetch GET 200 https://registry.npmmirror.com/end-of-stream 80ms (cache revalidated)
+124 silly packumentCache full:https://registry.npm.taobao.org/end-of-stream set size:24810 disposed:false
+125 http fetch GET 200 https://registry.npmmirror.com/chownr 80ms (cache revalidated)
+126 silly packumentCache full:https://registry.npm.taobao.org/chownr set size:16370 disposed:false
+127 http fetch GET 200 https://registry.npmmirror.com/decompress-response 80ms (cache revalidated)
+128 silly packumentCache full:https://registry.npm.taobao.org/decompress-response set size:26588 disposed:false
+129 http fetch GET 200 https://registry.npmmirror.com/simple-concat 81ms (cache revalidated)
+130 silly packumentCache full:https://registry.npm.taobao.org/simple-concat set size:5315 disposed:false
+131 silly placeDep ROOT end-of-stream@1.4.5 OK for: pump@3.0.3 want: ^1.1.0
+132 silly placeDep ROOT deep-extend@0.6.0 OK for: rc@1.2.8 want: ^0.6.0
+133 silly placeDep ROOT ini@1.3.8 OK for: rc@1.2.8 want: ~1.3.0
+134 silly placeDep node_modules/rc strip-json-comments@2.0.1 OK for: rc@1.2.8 want: ~2.0.1
+135 silly placeDep ROOT decompress-response@6.0.0 OK for: simple-get@4.0.1 want: ^6.0.0
+136 silly placeDep ROOT simple-concat@1.0.1 OK for: simple-get@4.0.1 want: ^1.0.0
+137 silly fetch manifest mimic-response@^3.1.0
+138 silly packumentCache full:https://registry.npm.taobao.org/mimic-response cache-miss
+139 http fetch GET 200 https://registry.npmmirror.com/mimic-response 55ms (cache revalidated)
+140 silly packumentCache full:https://registry.npm.taobao.org/mimic-response set size:14327 disposed:false
+141 silly placeDep ROOT mimic-response@3.1.0 OK for: decompress-response@6.0.0 want: ^3.1.0
+142 silly placeDep ROOT chownr@1.1.4 OK for: tar-fs@2.1.3 want: ^1.1.1
+143 silly placeDep ROOT tar-stream@2.2.0 OK for: tar-fs@2.1.3 want: ^2.1.4
+144 silly fetch manifest bl@^4.0.3
+145 silly packumentCache full:https://registry.npm.taobao.org/bl cache-miss
+146 silly fetch manifest fs-constants@^1.0.0
+147 silly packumentCache full:https://registry.npm.taobao.org/fs-constants cache-miss
+148 silly fetch manifest readable-stream@^3.1.1
+149 silly packumentCache full:https://registry.npm.taobao.org/readable-stream cache-miss
+150 http fetch GET 200 https://registry.npmmirror.com/fs-constants 68ms (cache revalidated)
+151 silly packumentCache full:https://registry.npm.taobao.org/fs-constants set size:2566 disposed:false
+152 http fetch GET 200 https://registry.npmmirror.com/readable-stream 69ms (cache revalidated)
+153 silly packumentCache full:https://registry.npm.taobao.org/readable-stream set size:231868 disposed:false
+154 http fetch GET 200 https://registry.npmmirror.com/bl 75ms (cache revalidated)
+155 silly packumentCache full:https://registry.npm.taobao.org/bl set size:157741 disposed:false
+156 silly placeDep ROOT bl@4.1.0 OK for: tar-stream@2.2.0 want: ^4.0.3
+157 silly placeDep ROOT fs-constants@1.0.0 OK for: tar-stream@2.2.0 want: ^1.0.0
+158 silly placeDep ROOT readable-stream@3.6.2 OK for: tar-stream@2.2.0 want: ^3.1.1
+159 silly fetch manifest buffer@^5.5.0
+160 silly packumentCache full:https://registry.npm.taobao.org/buffer cache-miss
+161 silly fetch manifest readable-stream@^3.4.0
+162 silly packumentCache full:https://registry.npm.taobao.org/readable-stream cache-hit
+163 silly fetch manifest string_decoder@^1.1.1
+164 silly packumentCache full:https://registry.npm.taobao.org/string_decoder cache-miss
+165 http fetch GET 200 https://registry.npmmirror.com/string_decoder 60ms (cache revalidated)
+166 silly packumentCache full:https://registry.npm.taobao.org/string_decoder set size:24817 disposed:false
+167 http fetch GET 200 https://registry.npmmirror.com/buffer 62ms (cache revalidated)
+168 silly packumentCache full:https://registry.npm.taobao.org/buffer set size:269098 disposed:false
+169 silly placeDep ROOT buffer@5.7.1 OK for: bl@4.1.0 want: ^5.5.0
+170 silly fetch manifest base64-js@^1.3.1
+171 silly packumentCache full:https://registry.npm.taobao.org/base64-js cache-miss
+172 silly fetch manifest ieee754@^1.1.13
+173 silly packumentCache full:https://registry.npm.taobao.org/ieee754 cache-miss
+174 http fetch GET 200 https://registry.npmmirror.com/ieee754 55ms (cache revalidated)
+175 silly packumentCache full:https://registry.npm.taobao.org/ieee754 set size:30795 disposed:false
+176 http fetch GET 200 https://registry.npmmirror.com/base64-js 56ms (cache revalidated)
+177 silly packumentCache full:https://registry.npm.taobao.org/base64-js set size:43117 disposed:false
+178 silly placeDep ROOT base64-js@1.5.1 OK for: buffer@5.7.1 want: ^1.3.1
+179 silly placeDep ROOT ieee754@1.2.1 OK for: buffer@5.7.1 want: ^1.1.13
+180 silly placeDep ROOT string_decoder@1.3.0 OK for: readable-stream@3.6.2 want: ^1.1.1
+181 silly fetch manifest safe-buffer@~5.2.0
+182 silly packumentCache full:https://registry.npm.taobao.org/safe-buffer cache-hit
+183 silly placeDep ROOT safe-buffer@5.2.1 OK for: string_decoder@1.3.0 want: ~5.2.0
+184 silly reify moves {}
+185 silly audit bulk request {
+185 silly audit   '@alloc/quick-lru': [ '5.2.0' ],
+185 silly audit   '@ant-design/colors': [ '7.2.0' ],
+185 silly audit   '@ant-design/cssinjs': [ '1.23.0' ],
+185 silly audit   '@ant-design/fast-color': [ '2.0.6' ],
+185 silly audit   '@ant-design/icons': [ '5.6.1' ],
+185 silly audit   '@ant-design/icons-svg': [ '4.4.2' ],
+185 silly audit   '@ant-design/react-slick': [ '1.0.2' ],
+185 silly audit   '@babel/runtime': [ '7.26.9' ],
+185 silly audit   '@ctrl/tinycolor': [ '3.6.1' ],
+185 silly audit   '@emotion/hash': [ '0.8.0' ],
+185 silly audit   '@emotion/is-prop-valid': [ '0.8.8' ],
+185 silly audit   '@emotion/memoize': [ '0.7.4' ],
+185 silly audit   '@emotion/unitless': [ '0.7.5' ],
+185 silly audit   '@eslint-community/eslint-utils': [ '4.4.1' ],
+185 silly audit   '@eslint-community/regexpp': [ '4.12.1' ],
+185 silly audit   '@eslint/eslintrc': [ '2.1.4' ],
+185 silly audit   '@eslint/js': [ '8.49.0' ],
+185 silly audit   '@humanwhocodes/config-array': [ '0.11.14' ],
+185 silly audit   '@humanwhocodes/module-importer': [ '1.0.1' ],
+185 silly audit   '@humanwhocodes/object-schema': [ '2.0.3' ],
+185 silly audit   '@isaacs/cliui': [ '8.0.2' ],
+185 silly audit   'ansi-regex': [ '6.1.0', '5.0.1' ],
+185 silly audit   'strip-ansi': [ '7.1.0', '6.0.1' ],
+185 silly audit   '@jridgewell/gen-mapping': [ '0.3.8' ],
+185 silly audit   '@jridgewell/resolve-uri': [ '3.1.2' ],
+185 silly audit   '@jridgewell/set-array': [ '1.2.1' ],
+185 silly audit   '@jridgewell/sourcemap-codec': [ '1.5.0' ],
+185 silly audit   '@jridgewell/trace-mapping': [ '0.3.25' ],
+185 silly audit   '@next/env': [ '13.4.19' ],
+185 silly audit   '@next/eslint-plugin-next': [ '13.4.19' ],
+185 silly audit   '@next/swc-darwin-arm64': [ '13.4.19' ],
+185 silly audit   '@next/swc-darwin-x64': [ '13.4.19' ],
+185 silly audit   '@next/swc-linux-arm64-gnu': [ '13.4.19' ],
+185 silly audit   '@next/swc-linux-arm64-musl': [ '13.4.19' ],
+185 silly audit   '@next/swc-linux-x64-gnu': [ '13.4.19' ],
+185 silly audit   '@next/swc-linux-x64-musl': [ '13.4.19' ],
+185 silly audit   '@next/swc-win32-arm64-msvc': [ '13.4.19' ],
+185 silly audit   '@next/swc-win32-ia32-msvc': [ '13.4.19' ],
+185 silly audit   '@next/swc-win32-x64-msvc': [ '13.4.19' ],
+185 silly audit   '@nodelib/fs.scandir': [ '2.1.5' ],
+185 silly audit   '@nodelib/fs.stat': [ '2.0.5' ],
+185 silly audit   '@nodelib/fs.walk': [ '1.2.8' ],
+185 silly audit   '@nolyfill/is-core-module': [ '1.0.39' ],
+185 silly audit   '@pkgjs/parseargs': [ '0.11.0' ],
+185 silly audit   '@rc-component/color-picker': [ '1.4.1' ],
+185 silly audit   '@rc-component/context': [ '1.4.0' ],
+185 silly audit   '@rc-component/mini-decimal': [ '1.1.0' ],
+185 silly audit   '@rc-component/mutate-observer': [ '1.1.0' ],
+185 silly audit   '@rc-component/portal': [ '1.1.2' ],
+185 silly audit   '@rc-component/tour': [ '1.8.1' ],
+185 silly audit   '@rc-component/trigger': [ '1.18.3' ],
+185 silly audit   '@rtsao/scc': [ '1.1.0' ],
+185 silly audit   '@rushstack/eslint-patch': [ '1.10.5' ],
+185 silly audit   '@swc/helpers': [ '0.5.1' ],
+185 silly audit   '@types/json5': [ '0.0.29' ],
+185 silly audit   '@types/node': [ '22.13.10' ],
+185 silly audit   '@types/react': [ '19.0.10' ],
+185 silly audit   '@typescript-eslint/parser': [ '6.21.0' ],
+185 silly audit   '@typescript-eslint/scope-manager': [ '6.21.0' ],
+185 silly audit   '@typescript-eslint/types': [ '6.21.0' ],
+185 silly audit   '@typescript-eslint/typescript-estree': [ '6.21.0' ],
+185 silly audit   'brace-expansion': [ '2.0.1', '1.1.11' ],
+185 silly audit   minimatch: [ '9.0.3', '3.1.2', '9.0.5' ],
+185 silly audit   '@typescript-eslint/visitor-keys': [ '6.21.0' ],
+185 silly audit   acorn: [ '8.14.1' ],
+185 silly audit   'acorn-jsx': [ '5.3.2' ],
+185 silly audit   ajv: [ '6.12.6' ],
+185 silly audit   'ansi-styles': [ '4.3.0', '6.2.1' ],
+185 silly audit   antd: [ '5.8.6' ],
+185 silly audit   'any-promise': [ '1.3.0' ],
+185 silly audit   anymatch: [ '3.1.3' ],
+185 silly audit   arg: [ '5.0.2' ],
+185 silly audit   argparse: [ '2.0.1' ],
+185 silly audit   'aria-query': [ '5.3.2' ],
+185 silly audit   'array-buffer-byte-length': [ '1.0.2' ],
+185 silly audit   'array-includes': [ '3.1.8' ],
+185 silly audit   'array-tree-filter': [ '2.1.0' ],
+185 silly audit   'array-union': [ '2.1.0' ],
+185 silly audit   'array.prototype.findlast': [ '1.2.5' ],
+185 silly audit   'array.prototype.findlastindex': [ '1.2.5' ],
+185 silly audit   'array.prototype.flat': [ '1.3.3' ],
+185 silly audit   'array.prototype.flatmap': [ '1.3.3' ],
+185 silly audit   'array.prototype.tosorted': [ '1.1.4' ],
+185 silly audit   'arraybuffer.prototype.slice': [ '1.0.4' ],
+185 silly audit   'ast-types-flow': [ '0.0.8' ],
+185 silly audit   'async-function': [ '1.0.0' ],
+185 silly audit   'async-validator': [ '4.2.5' ],
+185 silly audit   autoprefixer: [ '10.4.15' ],
+185 silly audit   'available-typed-arrays': [ '1.0.7' ],
+185 silly audit   'axe-core': [ '4.10.3' ],
+185 silly audit   'axobject-query': [ '4.1.0' ],
+185 silly audit   'balanced-match': [ '1.0.2' ],
+185 silly audit   'binary-extensions': [ '2.3.0' ],
+185 silly audit   braces: [ '3.0.3' ],
+185 silly audit   browserslist: [ '4.24.4' ],
+185 silly audit   busboy: [ '1.6.0' ],
+185 silly audit   'call-bind': [ '1.0.8' ],
+185 silly audit   'call-bind-apply-helpers': [ '1.0.2' ],
+185 silly audit   'call-bound': [ '1.0.4' ],
+185 silly audit   callsites: [ '3.1.0' ],
+185 silly audit   'camelcase-css': [ '2.0.1' ],
+185 silly audit   'caniuse-lite': [ '1.0.30001703' ],
+185 silly audit   chalk: [ '4.1.2' ],
+185 silly audit   chokidar: [ '3.6.0' ],
+185 silly audit   'glob-parent': [ '5.1.2', '6.0.2' ],
+185 silly audit   classnames: [ '2.5.1' ],
+185 silly audit   'client-only': [ '0.0.1' ],
+185 silly audit   'color-convert': [ '2.0.1' ],
+185 silly audit   'color-name': [ '1.1.4' ],
+185 silly audit   commander: [ '4.1.1' ],
+185 silly audit   'compute-scroll-into-view': [ '3.1.1' ],
+185 silly audit   'concat-map': [ '0.0.1' ],
+185 silly audit   'copy-to-clipboard': [ '3.3.3' ],
+185 silly audit   'cross-spawn': [ '7.0.6' ],
+185 silly audit   cssesc: [ '3.0.0' ],
+185 silly audit   csstype: [ '3.1.3' ],
+185 silly audit   'damerau-levenshtein': [ '1.0.8' ],
+185 silly audit   'data-view-buffer': [ '1.0.2' ],
+185 silly audit   'data-view-byte-length': [ '1.0.2' ],
+185 silly audit   'data-view-byte-offset': [ '1.0.1' ],
+185 silly audit   dayjs: [ '1.11.13' ],
+185 silly audit   debug: [ '4.4.0', '3.2.7' ],
+185 silly audit   'deep-is': [ '0.1.4' ],
+185 silly audit   'define-data-property': [ '1.1.4' ],
+185 silly audit   'define-properties': [ '1.2.1' ],
+185 silly audit   didyoumean: [ '1.2.2' ],
+185 silly audit   'dir-glob': [ '3.0.1' ],
+185 silly audit   dlv: [ '1.1.3' ],
+185 silly audit   doctrine: [ '3.0.0', '2.1.0' ],
+185 silly audit   'dunder-proto': [ '1.0.1' ],
+185 silly audit   eastasianwidth: [ '0.2.0' ],
+185 silly audit   'electron-to-chromium': [ '1.5.114' ],
+185 silly audit   'emoji-regex': [ '9.2.2', '8.0.0' ],
+185 silly audit   'enhanced-resolve': [ '5.18.1' ],
+185 silly audit   'es-abstract': [ '1.23.9' ],
+185 silly audit   'es-define-property': [ '1.0.1' ],
+185 silly audit   'es-errors': [ '1.3.0' ],
+185 silly audit   'es-iterator-helpers': [ '1.2.1' ],
+185 silly audit   'es-object-atoms': [ '1.1.1' ],
+185 silly audit   'es-set-tostringtag': [ '2.1.0' ],
+185 silly audit   'es-shim-unscopables': [ '1.1.0' ],
+185 silly audit   'es-to-primitive': [ '1.3.0' ],
+185 silly audit   escalade: [ '3.2.0' ],
+185 silly audit   'escape-string-regexp': [ '4.0.0' ],
+185 silly audit   eslint: [ '8.49.0' ],
+185 silly audit   'eslint-config-next': [ '13.4.19' ],
+185 silly audit   'eslint-import-resolver-typescript': [ '3.8.3' ],
+185 silly audit   'eslint-import-resolver-node': [ '0.3.9' ],
+185 silly audit   'eslint-module-utils': [ '2.12.0' ],
+185 silly audit   'eslint-plugin-import': [ '2.31.0' ],
+185 silly audit   semver: [ '6.3.1', '7.7.1' ],
+185 silly audit   'eslint-plugin-jsx-a11y': [ '6.10.2' ],
+185 silly audit   'eslint-plugin-react': [ '7.37.4' ],
+185 silly audit   'eslint-plugin-react-hooks': [ '5.0.0-canary-7118f5dd7-20230705' ],
+185 silly audit   resolve: [ '2.0.0-next.5', '1.22.10' ],
+185 silly audit   'eslint-scope': [ '7.2.2' ],
+185 silly audit   'eslint-visitor-keys': [ '3.4.3' ],
+185 silly audit   espree: [ '9.6.1' ],
+185 silly audit   esquery: [ '1.6.0' ],
+185 silly audit   esrecurse: [ '4.3.0' ],
+185 silly audit   estraverse: [ '5.3.0' ],
+185 silly audit   esutils: [ '2.0.3' ],
+185 silly audit   'fast-deep-equal': [ '3.1.3' ],
+185 silly audit   'fast-glob': [ '3.3.3' ],
+185 silly audit   'fast-json-stable-stringify': [ '2.1.0' ],
+185 silly audit   'fast-levenshtein': [ '2.0.6' ],
+185 silly audit   fastq: [ '1.19.1' ],
+185 silly audit   'file-entry-cache': [ '6.0.1' ],
+185 silly audit   'fill-range': [ '7.1.1' ],
+185 silly audit   'find-up': [ '5.0.0' ],
+185 silly audit   'flat-cache': [ '3.2.0' ],
+185 silly audit   flatted: [ '3.3.3' ],
+185 silly audit   'for-each': [ '0.3.5' ],
+185 silly audit   'foreground-child': [ '3.3.1' ],
+185 silly audit   'fraction.js': [ '4.3.7' ],
+185 silly audit   'framer-motion': [ '10.16.4' ],
+185 silly audit   'fs.realpath': [ '1.0.0' ],
+185 silly audit   fsevents: [ '2.3.3' ],
+185 silly audit   'function-bind': [ '1.1.2' ],
+185 silly audit   'function.prototype.name': [ '1.1.8' ],
+185 silly audit   'functions-have-names': [ '1.2.3' ],
+185 silly audit   'get-intrinsic': [ '1.3.0' ],
+185 silly audit   'get-proto': [ '1.0.1' ],
+185 silly audit   'get-symbol-description': [ '1.1.0' ],
+185 silly audit   'get-tsconfig': [ '4.10.0' ],
+185 silly audit   glob: [ '7.1.7', '10.4.5' ],
+185 silly audit   'glob-to-regexp': [ '0.4.1' ],
+185 silly audit   globals: [ '13.24.0' ],
+185 silly audit   globalthis: [ '1.0.4' ],
+185 silly audit   globby: [ '11.1.0' ],
+185 silly audit   gopd: [ '1.2.0' ],
+185 silly audit   'graceful-fs': [ '4.2.11' ],
+185 silly audit   graphemer: [ '1.4.0' ],
+185 silly audit   'has-bigints': [ '1.1.0' ],
+185 silly audit   'has-flag': [ '4.0.0' ],
+185 silly audit   'has-property-descriptors': [ '1.0.2' ],
+185 silly audit   'has-proto': [ '1.2.0' ],
+185 silly audit   'has-symbols': [ '1.1.0' ],
+185 silly audit   'has-tostringtag': [ '1.0.2' ],
+185 silly audit   hasown: [ '2.0.2' ],
+185 silly audit   ignore: [ '5.3.2' ],
+185 silly audit   'import-fresh': [ '3.3.1' ],
+185 silly audit   imurmurhash: [ '0.1.4' ],
+185 silly audit   inflight: [ '1.0.6' ],
+185 silly audit   inherits: [ '2.0.4' ],
+185 silly audit   'internal-slot': [ '1.1.0' ],
+185 silly audit   'is-array-buffer': [ '3.0.5' ],
+185 silly audit   'is-async-function': [ '2.1.1' ],
+185 silly audit   'is-bigint': [ '1.1.0' ],
+185 silly audit   'is-binary-path': [ '2.1.0' ],
+185 silly audit   'is-boolean-object': [ '1.2.2' ],
+185 silly audit   'is-bun-module': [ '1.3.0' ],
+185 silly audit   'is-callable': [ '1.2.7' ],
+185 silly audit   'is-core-module': [ '2.16.1' ],
+185 silly audit   'is-data-view': [ '1.0.2' ],
+185 silly audit   'is-date-object': [ '1.1.0' ],
+185 silly audit   'is-extglob': [ '2.1.1' ],
+185 silly audit   'is-finalizationregistry': [ '1.1.1' ],
+185 silly audit   'is-fullwidth-code-point': [ '3.0.0' ],
+185 silly audit   'is-generator-function': [ '1.1.0' ],
+185 silly audit   'is-glob': [ '4.0.3' ],
+185 silly audit   'is-map': [ '2.0.3' ],
+185 silly audit   'is-number': [ '7.0.0' ],
+185 silly audit   'is-number-object': [ '1.1.1' ],
+185 silly audit   'is-path-inside': [ '3.0.3' ],
+185 silly audit   'is-regex': [ '1.2.1' ],
+185 silly audit   'is-set': [ '2.0.3' ],
+185 silly audit   'is-shared-array-buffer': [ '1.0.4' ],
+185 silly audit   'is-string': [ '1.1.1' ],
+185 silly audit   'is-symbol': [ '1.1.1' ],
+185 silly audit   'is-typed-array': [ '1.1.15' ],
+185 silly audit   'is-weakmap': [ '2.0.2' ],
+185 silly audit   'is-weakref': [ '1.1.1' ],
+185 silly audit   'is-weakset': [ '2.0.4' ],
+185 silly audit   isarray: [ '2.0.5' ],
+185 silly audit   isexe: [ '2.0.0' ],
+185 silly audit   'iterator.prototype': [ '1.1.5' ],
+185 silly audit   jackspeak: [ '3.4.3' ],
+185 silly audit   jiti: [ '1.21.7' ],
+185 silly audit   'js-tokens': [ '4.0.0' ],
+185 silly audit   'js-yaml': [ '4.1.0' ],
+185 silly audit   'json-buffer': [ '3.0.1' ],
+185 silly audit   'json-schema-traverse': [ '0.4.1' ],
+185 silly audit   'json-stable-stringify-without-jsonify': [ '1.0.1' ],
+185 silly audit   json2mq: [ '0.2.0' ],
+185 silly audit   json5: [ '1.0.2' ],
+185 silly audit   'jsx-ast-utils': [ '3.3.5' ],
+185 silly audit   keyv: [ '4.5.4' ],
+185 silly audit   'language-subtag-registry': [ '0.3.23' ],
+185 silly audit   'language-tags': [ '1.0.9' ],
+185 silly audit   levn: [ '0.4.1' ],
+185 silly audit   lilconfig: [ '2.1.0', '3.1.3' ],
+185 silly audit   'lines-and-columns': [ '1.2.4' ],
+185 silly audit   'locate-path': [ '6.0.0' ],
+185 silly audit   'lodash.merge': [ '4.6.2' ],
+185 silly audit   'loose-envify': [ '1.4.0' ],
+185 silly audit   'lru-cache': [ '10.4.3' ],
+185 silly audit   'math-intrinsics': [ '1.1.0' ],
+185 silly audit   merge2: [ '1.4.1' ],
+185 silly audit   micromatch: [ '4.0.8' ],
+185 silly audit   minimist: [ '1.2.8' ],
+185 silly audit   minipass: [ '7.1.2' ],
+185 silly audit   ms: [ '2.1.3' ],
+185 silly audit   mz: [ '2.7.0' ],
+185 silly audit   nanoid: [ '3.3.9' ],
+185 silly audit   'natural-compare': [ '1.4.0' ],
+185 silly audit   next: [ '13.4.19' ],
+185 silly audit   postcss: [ '8.4.14', '8.4.29' ],
+185 silly audit   'node-releases': [ '2.0.19' ],
+185 silly audit   'normalize-path': [ '3.0.0' ],
+185 silly audit   'normalize-range': [ '0.1.2' ],
+185 silly audit   nprogress: [ '0.2.0' ],
+185 silly audit   'object-assign': [ '4.1.1' ],
+185 silly audit   'object-hash': [ '3.0.0' ],
+185 silly audit   'object-inspect': [ '1.13.4' ],
+185 silly audit   'object-keys': [ '1.1.1' ],
+185 silly audit   'object.assign': [ '4.1.7' ],
+185 silly audit   'object.entries': [ '1.1.8' ],
+185 silly audit   'object.fromentries': [ '2.0.8' ],
+185 silly audit   'object.groupby': [ '1.0.3' ],
+185 silly audit   'object.values': [ '1.2.1' ],
+185 silly audit   once: [ '1.4.0' ],
+185 silly audit   optionator: [ '0.9.4' ],
+185 silly audit   'own-keys': [ '1.0.1' ],
+185 silly audit   'p-limit': [ '3.1.0' ],
+185 silly audit   'p-locate': [ '5.0.0' ],
+185 silly audit   'package-json-from-dist': [ '1.0.1' ],
+185 silly audit   'parent-module': [ '1.0.1' ],
+185 silly audit   'path-exists': [ '4.0.0' ],
+185 silly audit   'path-is-absolute': [ '1.0.1' ],
+185 silly audit   'path-key': [ '3.1.1' ],
+185 silly audit   'path-parse': [ '1.0.7' ],
+185 silly audit   'path-scurry': [ '1.11.1' ],
+185 silly audit   'path-type': [ '4.0.0' ],
+185 silly audit   picocolors: [ '1.1.1' ],
+185 silly audit   picomatch: [ '2.3.1', '4.0.2' ],
+185 silly audit   pify: [ '2.3.0' ],
+185 silly audit   pirates: [ '4.0.6' ],
+185 silly audit   'possible-typed-array-names': [ '1.1.0' ],
+185 silly audit   'postcss-import': [ '15.1.0' ],
+185 silly audit   'postcss-js': [ '4.0.1' ],
+185 silly audit   'postcss-load-config': [ '4.0.2' ],
+185 silly audit   'postcss-nested': [ '6.2.0' ],
+185 silly audit   'postcss-selector-parser': [ '6.1.2' ],
+185 silly audit   'postcss-value-parser': [ '4.2.0' ],
+185 silly audit   'prelude-ls': [ '1.2.1' ],
+185 silly audit   'prop-types': [ '15.8.1' ],
+185 silly audit   punycode: [ '2.3.1' ],
+185 silly audit   'qrcode.react': [ '3.2.0' ],
+185 silly audit   'queue-microtask': [ '1.2.3' ],
+185 silly audit   'rc-cascader': [ '3.14.1' ],
+185 silly audit   'rc-checkbox': [ '3.1.0' ],
+185 silly audit   'rc-collapse': [ '3.7.3' ],
+185 silly audit   'rc-dialog': [ '9.1.0' ],
+185 silly audit   'rc-drawer': [ '6.2.0' ],
+185 silly audit   'rc-dropdown': [ '4.1.0' ],
+185 silly audit   'rc-field-form': [ '1.36.2' ],
+185 silly audit   'rc-image': [ '7.1.3' ],
+185 silly audit   'rc-input': [ '1.1.1' ],
+185 silly audit   'rc-input-number': [ '8.0.4' ],
+185 silly audit   'rc-mentions': [ '2.5.0' ],
+185 silly audit   'rc-menu': [ '9.10.0' ],
+185 silly audit   'rc-motion': [ '2.9.5' ],
+185 silly audit   'rc-notification': [ '5.1.1' ],
+185 silly audit   'rc-overflow': [ '1.4.1' ],
+185 silly audit   'rc-pagination': [ '3.6.1' ],
+185 silly audit   'rc-picker': [ '3.13.2' ],
+185 silly audit   'rc-progress': [ '3.4.2' ],
+185 silly audit   'rc-rate': [ '2.12.0' ],
+185 silly audit   'rc-resize-observer': [ '1.4.3' ],
+185 silly audit   'rc-segmented': [ '2.2.2' ],
+185 silly audit   'rc-select': [ '14.7.4' ],
+185 silly audit   'rc-slider': [ '10.2.1' ],
+185 silly audit   'rc-steps': [ '6.0.1' ],
+185 silly audit   'rc-switch': [ '4.1.0' ],
+185 silly audit   'rc-table': [ '7.32.3' ],
+185 silly audit   'rc-tabs': [ '12.9.0' ],
+185 silly audit   'rc-textarea': [ '1.3.4' ],
+185 silly audit   'rc-tooltip': [ '6.0.1' ],
+185 silly audit   'rc-tree': [ '5.7.12' ],
+185 silly audit   'rc-tree-select': [ '5.11.2' ],
+185 silly audit   'rc-upload': [ '4.3.6' ],
+185 silly audit   'rc-util': [ '5.44.4' ],
+185 silly audit   'react-is': [ '18.3.1', '16.13.1' ],
+185 silly audit   'rc-virtual-list': [ '3.18.4' ],
+185 silly audit   react: [ '18.2.0' ],
+185 silly audit   'react-dom': [ '18.2.0' ],
+185 silly audit   'react-swipeable': [ '7.0.1' ],
+185 silly audit   'read-cache': [ '1.0.0' ],
+185 silly audit   readdirp: [ '3.6.0' ],
+185 silly audit   'reflect.getprototypeof': [ '1.0.10' ],
+185 silly audit   'regenerator-runtime': [ '0.14.1' ],
+185 silly audit   'regexp.prototype.flags': [ '1.5.4' ],
+185 silly audit   'resize-observer-polyfill': [ '1.5.1' ],
+185 silly audit   'resolve-from': [ '4.0.0' ],
+185 silly audit   'resolve-pkg-maps': [ '1.0.0' ],
+185 silly audit   reusify: [ '1.1.0' ],
+185 silly audit   rimraf: [ '3.0.2' ],
+185 silly audit   'run-parallel': [ '1.2.0' ],
+185 silly audit   'safe-array-concat': [ '1.1.3' ],
+185 silly audit   'safe-push-apply': [ '1.0.0' ],
+185 silly audit   'safe-regex-test': [ '1.1.0' ],
+185 silly audit   scheduler: [ '0.23.2' ],
+185 silly audit   'scroll-into-view-if-needed': [ '3.1.0' ],
+185 silly audit   'set-function-length': [ '1.2.2' ],
+185 silly audit   'set-function-name': [ '2.0.2' ],
+185 silly audit   'set-proto': [ '1.0.0' ],
+185 silly audit   'shebang-command': [ '2.0.0' ],
+185 silly audit   'shebang-regex': [ '3.0.0' ],
+185 silly audit   'side-channel': [ '1.1.0' ],
+185 silly audit   'side-channel-list': [ '1.0.0' ],
+185 silly audit   'side-channel-map': [ '1.0.1' ],
+185 silly audit   'side-channel-weakmap': [ '1.0.2' ],
+185 silly audit   'signal-exit': [ '4.1.0' ],
+185 silly audit   slash: [ '3.0.0' ],
+185 silly audit   'source-map-js': [ '1.2.1' ],
+185 silly audit   'stable-hash': [ '0.0.4' ],
+185 silly audit   streamsearch: [ '1.1.0' ],
+185 silly audit   'string-convert': [ '0.2.1' ],
+185 silly audit   'string-width': [ '5.1.2', '4.2.3' ],
+185 silly audit   'string.prototype.includes': [ '2.0.1' ],
+185 silly audit   'string.prototype.matchall': [ '4.0.12' ],
+185 silly audit   'string.prototype.repeat': [ '1.0.0' ],
+185 silly audit   'string.prototype.trim': [ '1.2.10' ],
+185 silly audit   'string.prototype.trimend': [ '1.0.9' ],
+185 silly audit   'string.prototype.trimstart': [ '1.0.8' ],
+185 silly audit   'strip-bom': [ '3.0.0' ],
+185 silly audit   'strip-json-comments': [ '3.1.1', '2.0.1' ],
+185 silly audit   'styled-jsx': [ '5.1.1' ],
+185 silly audit   stylis: [ '4.3.6' ],
+185 silly audit   sucrase: [ '3.35.0' ],
+185 silly audit   'supports-color': [ '7.2.0' ],
+185 silly audit   'supports-preserve-symlinks-flag': [ '1.0.0' ],
+185 silly audit   swiper: [ '10.2.0' ],
+185 silly audit   tailwindcss: [ '3.3.3' ],
+185 silly audit   tapable: [ '2.2.1' ],
+185 silly audit   'text-table': [ '0.2.0' ],
+185 silly audit   thenify: [ '3.3.1' ],
+185 silly audit   'thenify-all': [ '1.6.0' ],
+185 silly audit   'throttle-debounce': [ '5.0.2' ],
+185 silly audit   tinyglobby: [ '0.2.12' ],
+185 silly audit   fdir: [ '6.4.3' ],
+185 silly audit   'to-regex-range': [ '5.0.1' ],
+185 silly audit   'toggle-selection': [ '1.0.6' ],
+185 silly audit   'ts-api-utils': [ '1.4.3' ],
+185 silly audit   'ts-interface-checker': [ '0.1.13' ],
+185 silly audit   'tsconfig-paths': [ '3.15.0' ],
+185 silly audit   tslib: [ '2.8.1' ],
+185 silly audit   'type-check': [ '0.4.0' ],
+185 silly audit   'type-fest': [ '0.20.2' ],
+185 silly audit   'typed-array-buffer': [ '1.0.3' ],
+185 silly audit   'typed-array-byte-length': [ '1.0.3' ],
+185 silly audit   'typed-array-byte-offset': [ '1.0.4' ],
+185 silly audit   'typed-array-length': [ '1.0.7' ],
+185 silly audit   typescript: [ '5.8.2' ],
+185 silly audit   'unbox-primitive': [ '1.1.0' ],
+185 silly audit   'undici-types': [ '6.20.0' ],
+185 silly audit   'update-browserslist-db': [ '1.1.3' ],
+185 silly audit   'uri-js': [ '4.4.1' ],
+185 silly audit   'util-deprecate': [ '1.0.2' ],
+185 silly audit   watchpack: [ '2.4.0' ],
+185 silly audit   which: [ '2.0.2' ],
+185 silly audit   'which-boxed-primitive': [ '1.1.1' ],
+185 silly audit   'which-builtin-type': [ '1.2.1' ],
+185 silly audit   'which-collection': [ '1.0.2' ],
+185 silly audit   'which-typed-array': [ '1.1.19' ],
+185 silly audit   'word-wrap': [ '1.2.5' ],
+185 silly audit   'wrap-ansi': [ '8.1.0', '7.0.0' ],
+185 silly audit   wrappy: [ '1.0.2' ],
+185 silly audit   yaml: [ '2.7.0' ],
+185 silly audit   'yocto-queue': [ '0.1.0' ],
+185 silly audit   zod: [ '3.21.4' ],
+185 silly audit   bcryptjs: [ '2.4.3' ],
+185 silly audit   'better-sqlite3': [ '8.7.0' ],
+185 silly audit   bindings: [ '1.5.0' ],
+185 silly audit   'prebuild-install': [ '7.1.3' ],
+185 silly audit   'file-uri-to-path': [ '1.0.0' ],
+185 silly audit   'detect-libc': [ '2.0.4' ],
+185 silly audit   'expand-template': [ '2.0.3' ],
+185 silly audit   'github-from-package': [ '0.0.0' ],
+185 silly audit   'mkdirp-classic': [ '0.5.3' ],
+185 silly audit   'napi-build-utils': [ '2.0.0' ],
+185 silly audit   'node-abi': [ '3.75.0' ],
+185 silly audit   pump: [ '3.0.3' ],
+185 silly audit   rc: [ '1.2.8' ],
+185 silly audit   'simple-get': [ '4.0.1' ],
+185 silly audit   'tar-fs': [ '2.1.3' ],
+185 silly audit   'tunnel-agent': [ '0.6.0' ],
+185 silly audit   'end-of-stream': [ '1.4.5' ],
+185 silly audit   'deep-extend': [ '0.6.0' ],
+185 silly audit   ini: [ '1.3.8' ],
+185 silly audit   'decompress-response': [ '6.0.0' ],
+185 silly audit   'simple-concat': [ '1.0.1' ],
+185 silly audit   'mimic-response': [ '3.1.0' ],
+185 silly audit   chownr: [ '1.1.4' ],
+185 silly audit   'tar-stream': [ '2.2.0' ],
+185 silly audit   bl: [ '4.1.0' ],
+185 silly audit   'fs-constants': [ '1.0.0' ],
+185 silly audit   'readable-stream': [ '3.6.2' ],
+185 silly audit   buffer: [ '5.7.1' ],
+185 silly audit   'base64-js': [ '1.5.1' ],
+185 silly audit   ieee754: [ '1.2.1' ],
+185 silly audit   string_decoder: [ '1.3.0' ],
+185 silly audit   'safe-buffer': [ '5.2.1' ]
+185 silly audit }
+186 verbose reify failed optional dependency E:\table\eenous\node_modules\fsevents
+187 silly reify mark deleted [ 'E:\\table\\eenous\\node_modules\\fsevents' ]
+188 verbose reify failed optional dependency E:\table\eenous\node_modules\@next\swc-win32-ia32-msvc
+189 silly reify mark deleted [ 'E:\\table\\eenous\\node_modules\\@next\\swc-win32-ia32-msvc' ]
+190 verbose reify failed optional dependency E:\table\eenous\node_modules\@next\swc-win32-arm64-msvc
+191 silly reify mark deleted [ 'E:\\table\\eenous\\node_modules\\@next\\swc-win32-arm64-msvc' ]
+192 verbose reify failed optional dependency E:\table\eenous\node_modules\@next\swc-linux-x64-musl
+193 silly reify mark deleted [ 'E:\\table\\eenous\\node_modules\\@next\\swc-linux-x64-musl' ]
+194 verbose reify failed optional dependency E:\table\eenous\node_modules\@next\swc-linux-x64-gnu
+195 silly reify mark deleted [ 'E:\\table\\eenous\\node_modules\\@next\\swc-linux-x64-gnu' ]
+196 verbose reify failed optional dependency E:\table\eenous\node_modules\@next\swc-linux-arm64-musl
+197 silly reify mark deleted [ 'E:\\table\\eenous\\node_modules\\@next\\swc-linux-arm64-musl' ]
+198 verbose reify failed optional dependency E:\table\eenous\node_modules\@next\swc-linux-arm64-gnu
+199 silly reify mark deleted [ 'E:\\table\\eenous\\node_modules\\@next\\swc-linux-arm64-gnu' ]
+200 verbose reify failed optional dependency E:\table\eenous\node_modules\@next\swc-darwin-x64
+201 silly reify mark deleted [ 'E:\\table\\eenous\\node_modules\\@next\\swc-darwin-x64' ]
+202 verbose reify failed optional dependency E:\table\eenous\node_modules\@next\swc-darwin-arm64
+203 silly reify mark deleted [ 'E:\\table\\eenous\\node_modules\\@next\\swc-darwin-arm64' ]
+204 http cache ieee754@https://registry.npmmirror.com/ieee754/-/ieee754-1.2.1.tgz 0ms (cache hit)
+205 http cache safe-buffer@https://registry.npmmirror.com/safe-buffer/-/safe-buffer-5.2.1.tgz 0ms (cache hit)
+206 http cache readable-stream@https://registry.npmmirror.com/readable-stream/-/readable-stream-3.6.2.tgz 0ms (cache hit)
+207 http cache base64-js@https://registry.npmmirror.com/base64-js/-/base64-js-1.5.1.tgz 0ms (cache hit)
+208 http cache buffer@https://registry.npmmirror.com/buffer/-/buffer-5.7.1.tgz 0ms (cache hit)
+209 http cache tar-stream@https://registry.npmmirror.com/tar-stream/-/tar-stream-2.2.0.tgz 0ms (cache hit)
+210 http cache string_decoder@https://registry.npmmirror.com/string_decoder/-/string_decoder-1.3.0.tgz 0ms (cache hit)
+211 http cache fs-constants@https://registry.npmmirror.com/fs-constants/-/fs-constants-1.0.0.tgz 0ms (cache hit)
+212 http cache chownr@https://registry.npmmirror.com/chownr/-/chownr-1.1.4.tgz 0ms (cache hit)
+213 http cache bl@https://registry.npmmirror.com/bl/-/bl-4.1.0.tgz 0ms (cache hit)
+214 http cache mimic-response@https://registry.npmmirror.com/mimic-response/-/mimic-response-3.1.0.tgz 0ms (cache hit)
+215 http cache simple-concat@https://registry.npmmirror.com/simple-concat/-/simple-concat-1.0.1.tgz 0ms (cache hit)
+216 http cache ini@https://registry.npmmirror.com/ini/-/ini-1.3.8.tgz 0ms (cache hit)
+217 http cache deep-extend@https://registry.npmmirror.com/deep-extend/-/deep-extend-0.6.0.tgz 0ms (cache hit)
+218 http cache tar-fs@https://registry.npmmirror.com/tar-fs/-/tar-fs-2.1.3.tgz 0ms (cache hit)
+219 http cache tunnel-agent@https://registry.npmmirror.com/tunnel-agent/-/tunnel-agent-0.6.0.tgz 0ms (cache hit)
+220 http cache end-of-stream@https://registry.npmmirror.com/end-of-stream/-/end-of-stream-1.4.5.tgz 0ms (cache hit)
+221 http cache decompress-response@https://registry.npmmirror.com/decompress-response/-/decompress-response-6.0.0.tgz 0ms (cache hit)
+222 http cache pump@https://registry.npmmirror.com/pump/-/pump-3.0.3.tgz 0ms (cache hit)
+223 http cache simple-get@https://registry.npmmirror.com/simple-get/-/simple-get-4.0.1.tgz 0ms (cache hit)
+224 http cache node-abi@https://registry.npmmirror.com/node-abi/-/node-abi-3.75.0.tgz 0ms (cache hit)
+225 http cache github-from-package@https://registry.npmmirror.com/github-from-package/-/github-from-package-0.0.0.tgz 0ms (cache hit)
+226 http cache mkdirp-classic@https://registry.npmmirror.com/mkdirp-classic/-/mkdirp-classic-0.5.3.tgz 0ms (cache hit)
+227 http cache napi-build-utils@https://registry.npmmirror.com/napi-build-utils/-/napi-build-utils-2.0.0.tgz 0ms (cache hit)
+228 http cache expand-template@https://registry.npmmirror.com/expand-template/-/expand-template-2.0.3.tgz 0ms (cache hit)
+229 http cache detect-libc@https://registry.npmmirror.com/detect-libc/-/detect-libc-2.0.4.tgz 0ms (cache hit)
+230 http cache rc@https://registry.npmmirror.com/rc/-/rc-1.2.8.tgz 0ms (cache hit)
+231 http cache prebuild-install@https://registry.npmmirror.com/prebuild-install/-/prebuild-install-7.1.3.tgz 0ms (cache hit)
+232 http cache file-uri-to-path@https://registry.npmmirror.com/file-uri-to-path/-/file-uri-to-path-1.0.0.tgz 0ms (cache hit)
+233 http cache bindings@https://registry.npmmirror.com/bindings/-/bindings-1.5.0.tgz 0ms (cache hit)
+234 http cache strip-json-comments@https://registry.npmmirror.com/strip-json-comments/-/strip-json-comments-2.0.1.tgz 0ms (cache hit)
+235 http cache bcryptjs@https://registry.npmmirror.com/bcryptjs/-/bcryptjs-2.4.3.tgz 0ms (cache hit)
+236 http cache better-sqlite3@https://registry.npmmirror.com/better-sqlite3/-/better-sqlite3-8.7.0.tgz 0ms (cache hit)
+237 http fetch POST 404 https://registry.npmmirror.com/-/npm/v1/security/advisories/bulk 98ms (cache skip)
+238 silly audit bulk request failed [object Object]
+239 http fetch POST 404 https://registry.npmmirror.com/-/npm/v1/security/audits/quick 45ms (cache skip)
+240 verbose audit error HttpErrorGeneral: 404 Not Found - POST https://registry.npmmirror.com/-/npm/v1/security/audits/quick - [NOT_IMPLEMENTED] /-/npm/v1/security/* not implemented yet
+240 verbose audit error     at C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-fetch\lib\check-response.js:103:15
+240 verbose audit error     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+240 verbose audit error     at async [getReport] (C:\Program Files\nodejs\node_modules\npm\node_modules\@npmcli\arborist\lib\audit-report.js:336:21)
+240 verbose audit error     at async AuditReport.run (C:\Program Files\nodejs\node_modules\npm\node_modules\@npmcli\arborist\lib\audit-report.js:106:19) {
+240 verbose audit error   headers: [Object: null prototype] {
+240 verbose audit error     server: [ 'Tengine' ],
+240 verbose audit error     date: [ 'Wed, 16 Jul 2025 10:18:51 GMT' ],
+240 verbose audit error     'content-type': [ 'application/json' ],
+240 verbose audit error     'transfer-encoding': [ 'chunked' ],
+240 verbose audit error     connection: [ 'keep-alive' ],
+240 verbose audit error     'strict-transport-security': [ 'max-age=5184000' ],
+240 verbose audit error     via: [ 'kunlun11.cn5220[,404666]' ],
+240 verbose audit error     'timing-allow-origin': [ '*' ],
+240 verbose audit error     eagleid: [ '77bcac9f17526611319485316e' ],
+240 verbose audit error     'x-fetch-attempts': [ '1' ],
+240 verbose audit error     'x-local-cache-status': [ 'skip' ]
+240 verbose audit error   },
+240 verbose audit error   statusCode: 404,
+240 verbose audit error   code: 'E404',
+240 verbose audit error   method: 'POST',
+240 verbose audit error   uri: 'https://registry.npmmirror.com/-/npm/v1/security/audits/quick',
+240 verbose audit error   body: {
+240 verbose audit error     error: '[NOT_IMPLEMENTED] /-/npm/v1/security/* not implemented yet'
+240 verbose audit error   },
+240 verbose audit error   pkgid: undefined
+240 verbose audit error }
+241 silly audit error [object Object]
+242 silly audit report null
+243 info run better-sqlite3@8.7.0 install node_modules/better-sqlite3 prebuild-install || node-gyp rebuild --release
+244 info run better-sqlite3@8.7.0 install { code: 1, signal: null }
+245 verbose stack Error: command failed
+245 verbose stack     at promiseSpawn (C:\Program Files\nodejs\node_modules\npm\node_modules\@npmcli\promise-spawn\lib\index.js:22:22)
+245 verbose stack     at spawnWithShell (C:\Program Files\nodejs\node_modules\npm\node_modules\@npmcli\promise-spawn\lib\index.js:124:10)
+245 verbose stack     at promiseSpawn (C:\Program Files\nodejs\node_modules\npm\node_modules\@npmcli\promise-spawn\lib\index.js:12:12)
+245 verbose stack     at runScriptPkg (C:\Program Files\nodejs\node_modules\npm\node_modules\@npmcli\run-script\lib\run-script-pkg.js:77:13)
+245 verbose stack     at runScript (C:\Program Files\nodejs\node_modules\npm\node_modules\@npmcli\run-script\lib\run-script.js:9:12)
+245 verbose stack     at C:\Program Files\nodejs\node_modules\npm\node_modules\@npmcli\arborist\lib\arborist\rebuild.js:329:17
+245 verbose stack     at run (C:\Program Files\nodejs\node_modules\npm\node_modules\promise-call-limit\dist\commonjs\index.js:67:22)
+245 verbose stack     at C:\Program Files\nodejs\node_modules\npm\node_modules\promise-call-limit\dist\commonjs\index.js:84:9
+245 verbose stack     at new Promise (<anonymous>)
+245 verbose stack     at callLimit (C:\Program Files\nodejs\node_modules\npm\node_modules\promise-call-limit\dist\commonjs\index.js:35:69)
+246 verbose pkgid better-sqlite3@8.7.0
+247 error code 1
+248 error path E:\table\eenous\node_modules\better-sqlite3
+249 error command failed
+250 error command C:\Windows\system32\cmd.exe /d /s /c prebuild-install || node-gyp rebuild --release
+251 error prebuild-install warn install Request timed out
+251 error gyp info it worked if it ends with ok
+251 error gyp info using node-gyp@11.0.0
+251 error gyp info using node@23.10.0 | win32 | x64
+251 error gyp info find Python using Python version 3.13.5 found at "C:\Users\zhoukai\AppData\Local\Programs\Python\Python313\python.exe"
+251 error gyp ERR! find VS 
+251 error gyp ERR! find VS msvs_version not set from command line or npm config
+251 error gyp ERR! find VS VCINSTALLDIR not set, not running in VS Command Prompt
+251 error gyp ERR! find VS could not use PowerShell to find Visual Studio 2017 or newer, try re-running with '--loglevel silly' for more details.
+251 error gyp ERR! find VS 
+251 error gyp ERR! find VS Failure details: undefined
+251 error gyp ERR! find VS could not use PowerShell to find Visual Studio 2017 or newer, try re-running with '--loglevel silly' for more details.
+251 error gyp ERR! find VS 
+251 error gyp ERR! find VS Failure details: undefined
+251 error gyp ERR! find VS not looking for VS2017 as it is only supported up to Node.js 21
+251 error gyp ERR! find VS not looking for VS2017 as it is only supported up to Node.js 21
+251 error gyp ERR! find VS not looking for VS2017 as it is only supported up to Node.js 21
+251 error gyp ERR! find VS not looking for VS2015 as it is only supported up to Node.js 18
+251 error gyp ERR! find VS not looking for VS2013 as it is only supported up to Node.js 8
+251 error gyp ERR! find VS 
+251 error gyp ERR! find VS **************************************************************
+251 error gyp ERR! find VS You need to install the latest version of Visual Studio
+251 error gyp ERR! find VS including the "Desktop development with C++" workload.
+251 error gyp ERR! find VS For more information consult the documentation at:
+251 error gyp ERR! find VS https://github.com/nodejs/node-gyp#on-windows
+251 error gyp ERR! find VS **************************************************************
+251 error gyp ERR! find VS 
+251 error gyp ERR! configure error 
+251 error gyp ERR! stack Error: Could not find any Visual Studio installation to use
+251 error gyp ERR! stack at VisualStudioFinder.fail (C:\Program Files\nodejs\node_modules\npm\node_modules\node-gyp\lib\find-visualstudio.js:118:11)
+251 error gyp ERR! stack at VisualStudioFinder.findVisualStudio (C:\Program Files\nodejs\node_modules\npm\node_modules\node-gyp\lib\find-visualstudio.js:74:17)
+251 error gyp ERR! stack at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+251 error gyp ERR! stack at async createBuildDir (C:\Program Files\nodejs\node_modules\npm\node_modules\node-gyp\lib\configure.js:112:18)
+251 error gyp ERR! stack at async run (C:\Program Files\nodejs\node_modules\npm\node_modules\node-gyp\bin\node-gyp.js:81:18)
+251 error gyp ERR! System Windows_NT 10.0.26100
+251 error gyp ERR! command "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\node_modules\\node-gyp\\bin\\node-gyp.js" "rebuild" "--release"
+251 error gyp ERR! cwd E:\table\eenous\node_modules\better-sqlite3
+251 error gyp ERR! node -v v23.10.0
+251 error gyp ERR! node-gyp -v v11.0.0
+251 error gyp ERR! not ok
+252 silly unfinished npm timer reify 1752661129555
+253 silly unfinished npm timer reify:build 1752661131131
+254 silly unfinished npm timer build 1752661131131
+255 silly unfinished npm timer build:deps 1752661131132
+256 silly unfinished npm timer build:run:install 1752661131141
+257 silly unfinished npm timer build:run:install:node_modules/better-sqlite3 1752661131141
+258 verbose cwd E:\table\eenous
+259 verbose os Windows_NT 10.0.26100
+260 verbose node v23.10.0
+261 verbose npm  v10.9.2
+262 verbose exit 1
+263 verbose code 1
+264 error A complete log of this run can be found in: E:\table\eenous\npm-cache\_logs\2025-07-16T10_18_49_120Z-debug-0.log
