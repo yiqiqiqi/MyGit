@@ -228,6 +228,215 @@ export const CONTACT_LOCATIONS = [
 ];
 
 /**
+ * 门派系统配置
+ */
+export const SECT_CONFIGS = {
+  // 硬件部门门派
+  tianyan: {
+    id: 'tianyan',
+    name: '天眼门',
+    subtitle: '感知天下宗',
+    emblem: '灵',
+    slogan: '慧眼神珠·万物感知术',
+    primaryColor: '#00ff7f',
+    secondaryColor: '#0a2a0a',
+    bgGradient: 'linear-gradient(135deg, #000000 0%, #0a2a0a 50%, #1a3a1a 100%)',
+    particles: 'sensing',
+    category: 'hardware',
+    description: '专注于传感器、监测设备和感知技术'
+  },
+  qianli: {
+    id: 'qianli',
+    name: '千里门',
+    subtitle: '传音达意宗',
+    emblem: '音',
+    slogan: '千里神音·传音达意术',
+    primaryColor: '#1e90ff',
+    secondaryColor: '#0a1a2a',
+    bgGradient: 'linear-gradient(135deg, #000000 0%, #0a1a2a 50%, #1a2a3a 100%)',
+    particles: 'wave',
+    category: 'hardware',
+    description: '专注于通信技术、信号传输和网络设备'
+  },
+  suantian: {
+    id: 'suantian',
+    name: '算天门',
+    subtitle: '神机妙算宗',
+    emblem: '计',
+    slogan: '算天神珠·神机妙算术',
+    primaryColor: '#ff6b35',
+    secondaryColor: '#2a1a0a',
+    bgGradient: 'linear-gradient(135deg, #000000 0%, #2a1a0a 50%, #3a2a1a 100%)',
+    particles: 'compute',
+    category: 'hardware',
+    description: '专注于计算硬件、处理器和高性能计算'
+  },
+  yuqi: {
+    id: 'yuqi',
+    name: '御器门',
+    subtitle: '万物听令宗',
+    emblem: '御',
+    slogan: '控制神符·万物御令术',
+    primaryColor: '#ff4757',
+    secondaryColor: '#2a0a1a',
+    bgGradient: 'linear-gradient(135deg, #000000 0%, #2a0a1a 50%, #3a1a2a 100%)',
+    particles: 'control',
+    category: 'hardware',
+    description: '专注于控制系统、自动化和机器人技术'
+  },
+  juneng: {
+    id: 'juneng',
+    name: '聚能门',
+    subtitle: '天地储能宗',
+    emblem: '能',
+    slogan: '聚能神丹·天地聚能术',
+    primaryColor: '#ffd700',
+    secondaryColor: '#2a2a0a',
+    bgGradient: 'linear-gradient(135deg, #000000 0%, #2a2a0a 50%, #3a3a1a 100%)',
+    particles: 'energy',
+    category: 'hardware',
+    description: '专注于能源管理、电源系统和储能技术'
+  },
+  ronghe: {
+    id: 'ronghe',
+    name: '融合门',
+    subtitle: '万法归宗派',
+    emblem: '合',
+    slogan: '融合宝镜·万法归一术',
+    primaryColor: '#9c27b0',
+    secondaryColor: '#2a0a2a',
+    bgGradient: 'linear-gradient(135deg, #000000 0%, #2a0a2a 50%, #3a1a3a 100%)',
+    particles: 'fusion',
+    category: 'hardware',
+    description: '专注于系统集成、模块整合和跨平台技术'
+  },
+  // 软件部门门派
+  tianji: {
+    id: 'tianji',
+    name: '天机门',
+    subtitle: '算法天机宗',
+    emblem: '算',
+    slogan: '天机宝鉴·天机算法术',
+    primaryColor: '#8a2be2',
+    secondaryColor: '#1a0a2a',
+    bgGradient: 'linear-gradient(135deg, #000000 0%, #1a0a2a 50%, #2a1a3a 100%)',
+    particles: 'matrix',
+    category: 'software',
+    description: '专注于算法设计、数据结构和核心技术'
+  },
+  huanxiang: {
+    id: 'huanxiang',
+    name: '幻象门',
+    subtitle: '用户体验宗',
+    emblem: '幻',
+    slogan: '体验神瞳·用户幻象术',
+    primaryColor: '#ff69b4',
+    secondaryColor: '#2a0a1a',
+    bgGradient: 'linear-gradient(135deg, #000000 0%, #2a0a1a 50%, #3a1a2a 100%)',
+    particles: 'illusion',
+    category: 'software',
+    description: '专注于UI/UX设计、前端开发和用户体验'
+  },
+  yunxiao: {
+    id: 'yunxiao',
+    name: '云霄门',
+    subtitle: '云端逍遥宗',
+    emblem: '云',
+    slogan: '云霄神驾·云端逍遥术',
+    primaryColor: '#87ceeb',
+    secondaryColor: '#0a1a2a',
+    bgGradient: 'linear-gradient(135deg, #000000 0%, #0a1a2a 50%, #1a2a3a 100%)',
+    particles: 'cloud',
+    category: 'software',
+    description: '专注于云计算、分布式系统和云服务'
+  },
+  jiagou: {
+    id: 'jiagou',
+    name: '架构门',
+    subtitle: '平台统御宗',
+    emblem: '构',
+    slogan: '统御宝塔·平台统御术',
+    primaryColor: '#ff8c00',
+    secondaryColor: '#2a1a0a',
+    bgGradient: 'linear-gradient(135deg, #000000 0%, #2a1a0a 50%, #3a2a1a 100%)',
+    particles: 'architecture',
+    category: 'software',
+    description: '专注于系统架构、平台设计和技术选型'
+  },
+  shuju: {
+    id: 'shuju',
+    name: '数据门',
+    subtitle: '洞察万象宗',
+    emblem: '数',
+    slogan: '洞察神镜·数据洞察术',
+    primaryColor: '#32cd32',
+    secondaryColor: '#0a2a0a',
+    bgGradient: 'linear-gradient(135deg, #000000 0%, #0a2a0a 50%, #1a3a1a 100%)',
+    particles: 'data',
+    category: 'software',
+    description: '专注于数据分析、大数据和数据库技术'
+  },
+  zhihui: {
+    id: 'zhihui',
+    name: '智慧门',
+    subtitle: '人工智能宗',
+    emblem: '智',
+    slogan: '智慧神光·人工智能术',
+    primaryColor: '#ffd700',
+    secondaryColor: '#2a2a0a',
+    bgGradient: 'linear-gradient(135deg, #000000 0%, #2a2a0a 50%, #3a3a1a 100%)',
+    particles: 'ai',
+    category: 'software',
+    description: '专注于人工智能、机器学习和深度学习'
+  }
+};
+
+/**
+ * 门派列表（按分类）
+ */
+export const HARDWARE_SECTS = ['tianyan', 'qianli', 'suantian', 'yuqi', 'juneng', 'ronghe'];
+export const SOFTWARE_SECTS = ['tianji', 'huanxiang', 'yunxiao', 'jiagou', 'shuju', 'zhihui'];
+export const ALL_SECTS = [...HARDWARE_SECTS, ...SOFTWARE_SECTS];
+
+/**
+ * 获取门派配置
+ */
+export const getSectConfig = (sectId) => {
+  return SECT_CONFIGS[sectId] || SECT_CONFIGS.tianyan;
+};
+
+/**
+ * 获取门派名称
+ */
+export const getSectName = (sectId) => {
+  return SECT_CONFIGS[sectId]?.name || '未知门派';
+};
+
+/**
+ * 修炼等级系统
+ */
+export const CULTIVATION_LEVELS = [
+  { level: 0, name: '入门弟子', minPoints: 0, permissions: ['view', 'comment'] },
+  { level: 1, name: '外门弟子', minPoints: 100, permissions: ['view', 'comment', 'create_suggestion'] },
+  { level: 2, name: '内门弟子', minPoints: 500, permissions: ['view', 'comment', 'create_suggestion', 'create_task'] },
+  { level: 3, name: '核心弟子', minPoints: 1000, permissions: ['view', 'comment', 'create_suggestion', 'create_task', 'moderate'] },
+  { level: 4, name: '执事', minPoints: 3000, permissions: ['view', 'comment', 'create_suggestion', 'create_task', 'moderate', 'manage_users'] },
+  { level: 5, name: '长老', minPoints: 10000, permissions: ['all'] }
+];
+
+/**
+ * 根据积分获取修炼等级
+ */
+export const getCultivationLevel = (points) => {
+  for (let i = CULTIVATION_LEVELS.length - 1; i >= 0; i--) {
+    if (points >= CULTIVATION_LEVELS[i].minPoints) {
+      return CULTIVATION_LEVELS[i];
+    }
+  }
+  return CULTIVATION_LEVELS[0];
+};
+
+/**
  * UI配置
  */
 export const UI_CONFIG = {
@@ -263,5 +472,13 @@ export default {
   UI_CONFIG,
   CAROUSEL_CONFIG,
   TECH_ACHIEVEMENTS,
-  PRODUCT_DETAILS
+  PRODUCT_DETAILS,
+  SECT_CONFIGS,
+  HARDWARE_SECTS,
+  SOFTWARE_SECTS,
+  ALL_SECTS,
+  CULTIVATION_LEVELS,
+  getSectConfig,
+  getSectName,
+  getCultivationLevel
 }; 

@@ -1,4 +1,4 @@
-import { SessionManager } from '../../../lib/database-simple';
+import { SessionManager } from '../../../lib/db';
 
 export default async function handler(req, res) {
   if (req.method !== 'POST') {
@@ -14,7 +14,7 @@ export default async function handler(req, res) {
 
     // 删除会话
     const deleted = SessionManager.deleteSession(sessionToken);
-    
+
     if (deleted) {
       res.status(200).json({
         success: true,
@@ -28,8 +28,8 @@ export default async function handler(req, res) {
 
   } catch (error) {
     console.error('登出错误:', error);
-    res.status(500).json({ 
-      error: '登出失败，请稍后重试' 
+    res.status(500).json({
+      error: '登出失败，请稍后重试'
     });
   }
-} 
+}
