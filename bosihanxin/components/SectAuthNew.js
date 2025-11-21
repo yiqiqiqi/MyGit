@@ -1,129 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
-
-// 门派配置数据
-const sectConfigs = {
-  tianyan: {
-    name: '天眼门',
-    subtitle: '感知天下宗',
-    emblem: '灵',
-    slogan: '慧眼神珠·万物感知术',
-    primaryColor: '#00ff7f',
-    secondaryColor: '#0a2a0a',
-    bgGradient: 'linear-gradient(135deg, #000000 0%, #0a2a0a 50%, #1a3a1a 100%)',
-    particles: 'sensing'
-  },
-  qianli: {
-    name: '千里门',
-    subtitle: '传音达意宗',
-    emblem: '音',
-    slogan: '千里神音·传音达意术',
-    primaryColor: '#1e90ff',
-    secondaryColor: '#0a1a2a',
-    bgGradient: 'linear-gradient(135deg, #000000 0%, #0a1a2a 50%, #1a2a3a 100%)',
-    particles: 'wave'
-  },
-  suantian: {
-    name: '算天门',
-    subtitle: '神机妙算宗',
-    emblem: '计',
-    slogan: '算天神珠·神机妙算术',
-    primaryColor: '#ff6b35',
-    secondaryColor: '#2a1a0a',
-    bgGradient: 'linear-gradient(135deg, #000000 0%, #2a1a0a 50%, #3a2a1a 100%)',
-    particles: 'compute'
-  },
-  yuqi: {
-    name: '御器门',
-    subtitle: '万物听令宗',
-    emblem: '御',
-    slogan: '控制神符·万物御令术',
-    primaryColor: '#ff4757',
-    secondaryColor: '#2a0a1a',
-    bgGradient: 'linear-gradient(135deg, #000000 0%, #2a0a1a 50%, #3a1a2a 100%)',
-    particles: 'control'
-  },
-  juneng: {
-    name: '聚能门',
-    subtitle: '天地储能宗',
-    emblem: '能',
-    slogan: '聚能神丹·天地聚能术',
-    primaryColor: '#ffd700',
-    secondaryColor: '#2a2a0a',
-    bgGradient: 'linear-gradient(135deg, #000000 0%, #2a2a0a 50%, #3a3a1a 100%)',
-    particles: 'energy'
-  },
-  ronghe: {
-    name: '融合门',
-    subtitle: '万法归宗派',
-    emblem: '合',
-    slogan: '融合宝镜·万法归一术',
-    primaryColor: '#9c27b0',
-    secondaryColor: '#2a0a2a',
-    bgGradient: 'linear-gradient(135deg, #000000 0%, #2a0a2a 50%, #3a1a3a 100%)',
-    particles: 'fusion'
-  },
-  tianji: {
-    name: '天机门',
-    subtitle: '算法天机宗',
-    emblem: '算',
-    slogan: '天机宝鉴·天机算法术',
-    primaryColor: '#8a2be2',
-    secondaryColor: '#1a0a2a',
-    bgGradient: 'linear-gradient(135deg, #000000 0%, #1a0a2a 50%, #2a1a3a 100%)',
-    particles: 'matrix'
-  },
-  huanxiang: {
-    name: '幻象门',
-    subtitle: '用户体验宗',
-    emblem: '幻',
-    slogan: '体验神瞳·用户幻象术',
-    primaryColor: '#ff69b4',
-    secondaryColor: '#2a0a1a',
-    bgGradient: 'linear-gradient(135deg, #000000 0%, #2a0a1a 50%, #3a1a2a 100%)',
-    particles: 'illusion'
-  },
-  yunxiao: {
-    name: '云霄门',
-    subtitle: '云端逍遥宗',
-    emblem: '云',
-    slogan: '云霄神驾·云端逍遥术',
-    primaryColor: '#87ceeb',
-    secondaryColor: '#0a1a2a',
-    bgGradient: 'linear-gradient(135deg, #000000 0%, #0a1a2a 50%, #1a2a3a 100%)',
-    particles: 'cloud'
-  },
-  jiagou: {
-    name: '架构门',
-    subtitle: '平台统御宗',
-    emblem: '构',
-    slogan: '统御宝塔·平台统御术',
-    primaryColor: '#ff8c00',
-    secondaryColor: '#2a1a0a',
-    bgGradient: 'linear-gradient(135deg, #000000 0%, #2a1a0a 50%, #3a2a1a 100%)',
-    particles: 'architecture'
-  },
-  shuju: {
-    name: '数据门',
-    subtitle: '洞察万象宗',
-    emblem: '数',
-    slogan: '洞察神镜·数据洞察术',
-    primaryColor: '#32cd32',
-    secondaryColor: '#0a2a0a',
-    bgGradient: 'linear-gradient(135deg, #000000 0%, #0a2a0a 50%, #1a3a1a 100%)',
-    particles: 'data'
-  },
-  zhihui: {
-    name: '智慧门',
-    subtitle: '人工智能宗',
-    emblem: '智',
-    slogan: '智慧神光·人工智能术',
-    primaryColor: '#ffd700',
-    secondaryColor: '#2a2a0a',
-    bgGradient: 'linear-gradient(135deg, #000000 0%, #2a2a0a 50%, #3a3a1a 100%)',
-    particles: 'ai'
-  }
-};
+import { SECT_CONFIGS } from '../constants/appConstants';
 
 // API 工具函数
 const api = {
@@ -135,25 +12,25 @@ const api = {
       },
       body: JSON.stringify(data),
     });
-    
+
     const result = await response.json();
-    
+
     if (!response.ok) {
       throw new Error(result.error || '请求失败');
     }
-    
+
     return result;
   },
 
-  async register(qq, globalNickname, password, sectId, sectNickname, sectPassword) {
+  async register(qq, globalNickname, password, sectId, sectNickname) {
     return this.post('/api/auth/register', {
-      qq, globalNickname, password, sectId, sectNickname, sectPassword
+      qq, globalNickname, password, sectId, sectNickname
     });
   },
 
-  async login(qq, password, sectId, sectPassword) {
+  async login(qq, password, sectId) {
     return this.post('/api/auth/login', {
-      qq, password, sectId, sectPassword
+      qq, password, sectId
     });
   },
 
@@ -179,14 +56,13 @@ const SectAuthNew = ({ sectId, onLoginSuccess, children, renderContent }) => {
   const [password, setPassword] = useState('');
   const [globalNickname, setGlobalNickname] = useState('');
   const [sectNickname, setSectNickname] = useState('');
-  const [sectPassword, setSectPassword] = useState('');
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [user, setUser] = useState(null);
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
   const [sessionToken, setSessionToken] = useState('');
 
-  const sectConfig = sectConfigs[sectId] || sectConfigs.tianyan;
+  const sectConfig = SECT_CONFIGS[sectId] || SECT_CONFIGS.tianyan;
 
   // 检查登录状态
   useEffect(() => {
@@ -220,7 +96,7 @@ const SectAuthNew = ({ sectId, onLoginSuccess, children, renderContent }) => {
 
   // 密码强度验证
   const validatePassword = (pwd) => {
-    return pwd.length >= 6;
+    return pwd.length >= 6 && pwd.length <= 50;
   };
 
   // 处理登录
@@ -237,21 +113,17 @@ const SectAuthNew = ({ sectId, onLoginSuccess, children, renderContent }) => {
         throw new Error('请输入密码');
       }
 
-      if (!sectPassword) {
-        throw new Error('请输入门派密码');
-      }
+      const result = await api.login(qq, password, sectId);
 
-      const result = await api.login(qq, password, sectId, sectPassword);
-      
       if (result.success) {
         setUser(result.user);
         setSessionToken(result.sessionToken);
         setIsLoggedIn(true);
         setCurrentStep('success');
-        
+
         // 保存会话令牌
         localStorage.setItem(`session_token_${sectId}`, result.sessionToken);
-        
+
         onLoginSuccess && onLoginSuccess(result.user);
       }
 
@@ -273,39 +145,42 @@ const SectAuthNew = ({ sectId, onLoginSuccess, children, renderContent }) => {
       }
 
       if (!validatePassword(password)) {
-        throw new Error('密码至少6位字符');
-      }
-
-      if (!validatePassword(sectPassword)) {
-        throw new Error('门派密码至少6位字符');
+        throw new Error('密码长度为6-50个字符');
       }
 
       if (!globalNickname.trim()) {
         throw new Error('请输入全局昵称');
       }
 
+      if (globalNickname.length > 20) {
+        throw new Error('全局昵称不超过20个字符');
+      }
+
       if (!sectNickname.trim()) {
         throw new Error('请输入门派昵称');
       }
 
+      if (sectNickname.length > 20) {
+        throw new Error('门派昵称不超过20个字符');
+      }
+
       const result = await api.register(
-        qq, 
-        globalNickname.trim(), 
-        password, 
-        sectId, 
-        sectNickname.trim(), 
-        sectPassword
+        qq,
+        globalNickname.trim(),
+        password,
+        sectId,
+        sectNickname.trim()
       );
-      
+
       if (result.success) {
         setUser(result.user);
         setSessionToken(result.sessionToken);
         setIsLoggedIn(true);
         setCurrentStep('success');
-        
+
         // 保存会话令牌
         localStorage.setItem(`session_token_${sectId}`, result.sessionToken);
-        
+
         onLoginSuccess && onLoginSuccess(result.user);
       }
 
@@ -333,14 +208,13 @@ const SectAuthNew = ({ sectId, onLoginSuccess, children, renderContent }) => {
       setSessionToken('');
       setQq('');
       setPassword('');
-      setSectPassword('');
       setGlobalNickname('');
       setSectNickname('');
       setError('');
     }
   };
 
-  // 更新功能
+  // 更新功能（移除了门派密码相关）
   const updateFunctions = {
     updateGlobalNickname: async (newNickname) => {
       try {
@@ -348,13 +222,13 @@ const SectAuthNew = ({ sectId, onLoginSuccess, children, renderContent }) => {
           newNickname
         });
         if (result.success) {
-          setUser({...user, globalNickname: newNickname});
+          setUser({ ...user, globalNickname: newNickname });
           return true;
         }
         return false;
       } catch (error) {
         console.error('更新全局昵称失败:', error);
-        return false;
+        throw error;
       }
     },
 
@@ -364,13 +238,13 @@ const SectAuthNew = ({ sectId, onLoginSuccess, children, renderContent }) => {
           newNickname
         });
         if (result.success) {
-          setUser({...user, sectNickname: newNickname});
+          setUser({ ...user, sectNickname: newNickname });
           return true;
         }
         return false;
       } catch (error) {
         console.error('更新门派昵称失败:', error);
-        return false;
+        throw error;
       }
     },
 
@@ -379,21 +253,26 @@ const SectAuthNew = ({ sectId, onLoginSuccess, children, renderContent }) => {
         const result = await api.updateUser(sessionToken, 'changePassword', {
           oldPassword, newPassword
         });
-        return result.success;
+        if (result.success) {
+          return true;
+        }
+        return false;
       } catch (error) {
         console.error('更新密码失败:', error);
         throw error;
       }
     },
 
-    updateSectPassword: async (oldPassword, newPassword) => {
+    updateProfile: async (updates) => {
       try {
-        const result = await api.updateUser(sessionToken, 'changeSectPassword', {
-          oldPassword, newPassword
-        });
-        return result.success;
+        const result = await api.updateUser(sessionToken, 'updateProfile', updates);
+        if (result.success) {
+          setUser({ ...user, ...updates });
+          return true;
+        }
+        return false;
       } catch (error) {
-        console.error('更新门派密码失败:', error);
+        console.error('更新资料失败:', error);
         throw error;
       }
     }
@@ -405,7 +284,7 @@ const SectAuthNew = ({ sectId, onLoginSuccess, children, renderContent }) => {
     if (renderContent) {
       return renderContent(user, handleLogout, updateFunctions);
     }
-    
+
     // 支持传统的 children API
     if (children) {
       return children;
@@ -421,7 +300,7 @@ const SectAuthNew = ({ sectId, onLoginSuccess, children, renderContent }) => {
           </div>
           <button onClick={handleLogout} className="logout-btn">退出门派</button>
         </div>
-        
+
         <div className="welcome-section">
           <h2>欢迎回来，{user.sectNickname}师兄</h2>
           <p>你已成功拜入{sectConfig.name}·{sectConfig.subtitle}</p>
@@ -557,7 +436,7 @@ const SectAuthNew = ({ sectId, onLoginSuccess, children, renderContent }) => {
           <div className="auth-form">
             <h2>拜师入门</h2>
             <p>已有账号？请输入QQ号和密码登录</p>
-            
+
             <div className="input-group">
               <label>QQ号</label>
               <input
@@ -566,38 +445,30 @@ const SectAuthNew = ({ sectId, onLoginSuccess, children, renderContent }) => {
                 onChange={(e) => setQq(e.target.value.replace(/\D/g, ''))}
                 placeholder="请输入QQ号"
                 maxLength={12}
+                onKeyPress={(e) => e.key === 'Enter' && handleLogin()}
               />
             </div>
 
             <div className="input-group">
-              <label>全局密码</label>
+              <label>密码</label>
               <input
                 type="password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
-                placeholder="请输入全局密码"
-              />
-            </div>
-
-            <div className="input-group">
-              <label>门派密码</label>
-              <input
-                type="password"
-                value={sectPassword}
-                onChange={(e) => setSectPassword(e.target.value)}
-                placeholder="请输入门派密码"
+                placeholder="请输入密码"
+                onKeyPress={(e) => e.key === 'Enter' && handleLogin()}
               />
             </div>
 
             <div className="button-group">
-              <button 
-                onClick={handleLogin} 
-                disabled={loading || !qq || !password || !sectPassword}
+              <button
+                onClick={handleLogin}
+                disabled={loading || !qq || !password}
                 className="primary-btn"
               >
                 {loading ? '验证中...' : '登录门派'}
               </button>
-              <button 
+              <button
                 onClick={() => setCurrentStep('register')}
                 className="secondary-btn"
               >
@@ -611,7 +482,7 @@ const SectAuthNew = ({ sectId, onLoginSuccess, children, renderContent }) => {
           <div className="auth-form">
             <h2>新弟子入门</h2>
             <p>首次加入{sectConfig.name}，请填写以下信息</p>
-            
+
             <div className="input-group">
               <label>QQ号</label>
               <input
@@ -635,12 +506,13 @@ const SectAuthNew = ({ sectId, onLoginSuccess, children, renderContent }) => {
             </div>
 
             <div className="input-group">
-              <label>全局密码</label>
+              <label>密码</label>
               <input
                 type="password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
-                placeholder="设置全局密码（至少6位）"
+                placeholder="设置密码（6-50个字符）"
+                maxLength={50}
               />
             </div>
 
@@ -655,25 +527,15 @@ const SectAuthNew = ({ sectId, onLoginSuccess, children, renderContent }) => {
               />
             </div>
 
-            <div className="input-group">
-              <label>门派密码</label>
-              <input
-                type="password"
-                value={sectPassword}
-                onChange={(e) => setSectPassword(e.target.value)}
-                placeholder="设置门派密码（至少6位）"
-              />
-            </div>
-
             <div className="button-group">
-              <button 
-                onClick={handleRegister} 
-                disabled={loading || !qq || !password || !sectPassword || !globalNickname || !sectNickname}
+              <button
+                onClick={handleRegister}
+                disabled={loading || !qq || !password || !globalNickname || !sectNickname}
                 className="primary-btn"
               >
                 {loading ? '注册中...' : '确认入门'}
               </button>
-              <button 
+              <button
                 onClick={() => setCurrentStep('login')}
                 className="secondary-btn"
               >
@@ -849,4 +711,4 @@ const SectAuthNew = ({ sectId, onLoginSuccess, children, renderContent }) => {
   );
 };
 
-export default SectAuthNew; 
+export default SectAuthNew;
